@@ -1,0 +1,40 @@
+
+.grid {
+  width: 150px;
+  height: auto;
+  margin: auto;
+  box-shadow: 0px 0px 20px white;
+  background: white;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 25px;
+}
+
+.cell {
+  display: inline-block;
+  border: 1px solid black;
+  width: 15px;
+  height: 15px;;
+  margin-top: -1px;
+  margin-left: -1px;
+  margin-bottom: -1px;
+}
+
+.dead {
+  background-color: lightgrey;
+}
+
+.alive {
+  background-color: green;
+}
+
+.cell:hover {
+  background: #00ccff;
+}
+
+.cosmos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
