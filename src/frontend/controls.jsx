@@ -24,6 +24,10 @@ class Controls extends React.Component {
     this.props.pause();
   }
 
+  step() {
+    this.props.step();
+  }
+
   buttonSwitch() {
     if ( this.props.dreaming ) {
       return (<button className="right-button" onClick={() => this.pause()}>Pause Dream</button>)
@@ -38,7 +42,7 @@ class Controls extends React.Component {
         <div className="left-buttons">
           <button className="button" onClick={() => this.populateCosmos()}>Populate Cosmos</button>
           <button className="button" onClick={() => this.clearCosmos()}>Clear Cosmos</button>
-          <button className="button" onClick={() => this.clearCosmos()}>Next Generation</button>
+          {/* <button className="button" onClick={() => this.step()}>Next Generation</button> */}
         </div>
         <div className="right-buttons">
           {this.buttonSwitch()}
