@@ -4,8 +4,12 @@ import './App.css';
 
 function App() {
   return (
-    <div className="app">
-      <Cosmos/>
+    <div>
+      
+      <div className="app">
+        <h1 className="game-header">Conway's Game of Life</h1>
+        <Cosmos/>
+      </div>
     </div>
   );
 }

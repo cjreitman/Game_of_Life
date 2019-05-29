@@ -1,4 +1,5 @@
 import './css.css';
+// import soundfile from './sound.mp3';
 import React from 'react';
 import Grid from './grid';
 import Controls from './controls';
@@ -7,14 +8,14 @@ class Cosmos extends React.Component {
 
   constructor(props) {
     super(props);
-    this.speed = 100;
+    this.speed = 150;
     this.rows = 30;
     this.cols = 50;
     this.state = {
       generation: 0,
-      grid: Array(this.rows).fill().map(() => Array(this.cols).fill(false))
+      grid: Array(this.rows).fill().map(() => Array(this.cols).fill(false)),
+      dreaming: false,
     };
-    
     this.initialState = this.state.grid;
     this.selectCell = this.selectCell.bind(this);
     this.populateCosmos = this.populateCosmos.bind(this);
@@ -22,6 +23,7 @@ class Cosmos extends React.Component {
     this.play = this.play.bind(this);
     this.dream = this.dream.bind(this);
     this.pause = this.pause.bind(this);
+    this.step = this.step.bind(this);
   }
 
   selectCell(row, col) {
@@ -33,6 +35,8 @@ class Cosmos extends React.Component {
   }
 
   populateCosmos() {
+    this.pause();
+    this.clearCosmos();
     let gridCopy = arrayClone(this.initialState);
     for ( let i = 0; i < this.rows; i++ ) {
       for ( let x = 0; x < this.cols; x++ ) {
@@ -47,19 +51,27 @@ class Cosmos extends React.Component {
   }
 
   clearCosmos() {
+    clearInterval(this.intervalId);
     this.setState({
       grid: this.initialState,
-      generation: 0
+      generation: 0,
+      dreaming: false
     });
   }
 
   play() {
     clearInterval(this.intervalId);
     this.intervalId = setInterval(this.dream, this.speed);
+    this.setState({
+      dreaming: true
+    });
   }
 
   pause() {
     clearInterval(this.intervalId);
+    this.setState({
+      dreaming: false
+    });
   }
 
   dream() {
@@ -87,25 +99,51 @@ class Cosmos extends React.Component {
     });
   }
 
+  step() {
+    let g = this.state.grid;
+    let g2 = arrayClone(this.state.grid);
+    let count = 0;
+    let i = 0;
+    let j = 0;
+    if (i > 0) if (g[i - 1][j]) count++;
+    if (i > 0 && j > 0) if (g[i - 1][j - 1]) count++;
+    if (i > 0 && j < this.cols - 1) if (g[i - 1][j + 1]) count++;
+    if (j < this.cols - 1) if (g[i][j + 1]) count++;
+    if (j > 0) if (g[i][j - 1]) count++;
+    if (i < this.rows - 1) if (g[i + 1][j]) count++;
+    if (i < this.rows - 1 && j > 0) if (g[i + 1][j - 1]) count++;
+    if (i < this.rows - 1 && j < this.cols - 1) if (g[i + 1][j + 1]) count++;
+    if (g[i][j] && (count < 2 || count > 3)) g2[i][j] = false;
+    if (!g[i][j] && count === 3) g2[i][j] = true;
+    this.setState({
+      grid: g2,
+      generation: this.state.generation + 1
+    });
+  }
+    
   render() {
     return (
     <div className="cosmos"> 
-      <Controls 
-        populateCosmos={this.populateCosmos} 
-        grid={this.state.grid} 
-        initialState={this.initialState}
-        clearCosmos={this.clearCosmos}
-        play={this.play}
-        pause={this.pause}
-       />
+      <div>
+      <h3 className="generations-header"> Generations: {this.state.generation} </h3>
+        <Grid
+          rows = {this.rows}
+          cols = {this.cols}
+          grid = {this.state.grid}
+          selectCell = {this.selectCell}
+        />
 
-      <Grid
-        rows = {this.rows}
-        cols = {this.cols}
-        grid = {this.state.grid}
-        selectCell = {this.selectCell}
-      />
-      <h3> Generations: {this.state.generation} </h3>
+        <Controls 
+          populateCosmos={this.populateCosmos} 
+          grid={this.state.grid} 
+          initialState={this.initialState}
+          clearCosmos={this.clearCosmos}
+          step={this.step}
+          play={this.play}
+          pause={this.pause}
+          dreaming={this.state.dreaming}
+        />
+      </div>
     </div>)
   }
 

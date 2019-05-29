@@ -1,4 +1,4 @@
-
+import './css.css';
 import React from 'react';
 
 class Controls extends React.Component {
@@ -24,13 +24,25 @@ class Controls extends React.Component {
     this.props.pause();
   }
 
+  buttonSwitch() {
+    if ( this.props.dreaming ) {
+      return (<button className="right-button" onClick={() => this.pause()}>Pause Dream</button>)
+    } else {
+      return (<button className="right-button" onClick={() => this.play()}>Dare to Dream</button>)
+    }
+  }
+
   render() {
     return (
-      <div>
-        <button onClick={() => this.populateCosmos()}>Populate Cosmos</button>
-        <button onClick={() => this.clearCosmos()}>Clear Cosmos</button>
-        <button onClick={() => this.play()}>Dare to Dream</button>
-        <button onClick={() => this.pause()}>Pause the Dream</button>
+      <div className="buttons">
+        <div className="left-buttons">
+          <button className="button" onClick={() => this.populateCosmos()}>Populate Cosmos</button>
+          <button className="button" onClick={() => this.clearCosmos()}>Clear Cosmos</button>
+          <button className="button" onClick={() => this.clearCosmos()}>Next Generation</button>
+        </div>
+        <div className="right-buttons">
+          {this.buttonSwitch()}
+        </div>
       </div>
       )
   }
