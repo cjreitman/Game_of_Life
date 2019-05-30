@@ -18,6 +18,7 @@
   margin-top: -1px;
   margin-left: -1px;
   margin-bottom: -1px;
+  
 }
 
 .dead {
@@ -26,10 +27,12 @@
 
 .alive {
   background-color: #38c4e7;
+  box-shadow: 0px 0px 15px 0px #38c4e7;
 }
 
 .cell:hover {
   background: #38c4e7;
+  box-shadow: 0px 0px 15px 0px #38c4e7;
 }
 
 .cosmos {
@@ -43,7 +46,7 @@
   display: flex;
   justify-content: space-between;
   width: 100%;
-  margin-top: 35px;
+  margin-top: 30px;
   color: white;
   font-weight: bold;
 }
@@ -66,8 +69,8 @@
   border: 2px solid grey;
   padding: 10px;
   border-radius: 5px;
+  font-size: 17px;
   box-shadow: 0px 0px 10px white;
-  opacity: .9;
   text-shadow: 0px 0px 3px white;
   width: 200px;
   color: #38c4e7;
@@ -81,10 +84,9 @@
   border: 2px solid grey;
   padding: 10px;
   border-radius: 5px;
-  box-shadow: 0px 0px 10px white;
-  opacity: .9;
+  box-shadow: 0px 0px 15px 0px white;
   width: 32%;
-  text-shadow: 0px 0px 3px white;
+  text-shadow: 0px 0px 5px white;
 }
 
 .button {
@@ -92,7 +94,6 @@
   padding: 10px;
   border-radius: 5px;
   box-shadow: 0px 0px 10px white;
-  opacity: .9;
   text-shadow: 0px 0px 3px white;
 }
 
