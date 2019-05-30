@@ -1,49 +1,207 @@
 
 .app {
-  margin-top: 60px;
+  margin-top: 40px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  -webkit-animation: fadein-out 5s; /* Safari, Chrome and Opera > 12.1 */
-  -moz-animation: fadein-out 5s; /* Firefox < 16 */
-  -ms-animation: fadein-out 5s; /* Internet Explorer */
-  -o-animation: fadein-out 5s; /* Opera < 12.1 */
-  animation: fadein-out 5s;
+  animation-delay: 30s;
+  -webkit-animation: fadeinflicker 6s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadeinflicker 6s; /* Firefox < 16 */
+  -ms-animation: fadeinflicker 6s; /* Internet Explorer */
+  -o-animation: fadeinflicker 6s; /* Opera < 12.1 */
+  animation: fadeinflicker 6s;
+ 
 }
 
 .game-header {
-  margin-top: 25px;
-  font-size: 21px;
+  margin-top: 70px;
+  text-align: center;
+  color: white;
+  font-family: "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-weight: bold;
+  margin-bottom: 20px;
+  font-size: 30px;
+  text-shadow: 0px 0px 5px white;
+  text-decoration: underline;
+  /* animation-delay: 30s; */
+  -webkit-animation: fadein 15s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 15s; /* Firefox < 16 */
+  -ms-animation: fadein 15s; /* Internet Explorer */
+  -o-animation: fadein 15s; /* Opera < 12.1 */
+  animation: fadein 15s;
+  
+}
+
+.instructions {
+  margin-top: 50px;
+  font-size: 18px;
+  text-align: center;
+  color: white;
+  font-family: "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-weight: bold;
+  text-shadow: 0px 0px 4px white;
+  -webkit-animation: fadeinslow 20s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadeinslow 20s; /* Firefox < 16 */
+  -ms-animation: fadeinslow 20s; /* Internet Explorer */
+  -o-animation: fadeinslow 20s; /* Opera < 12.1 */
+  animation: fadeinslow 20s;
+}
+
+.instructions1 {
+  font-size: 18px;
   text-align: center;
   color: white;
   color: white;
   font-family: "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   font-weight: bold;
-  margin-bottom: 30px;
-  font-size: 30px;
   text-shadow: 0px 0px 4px white;
-  text-decoration: underline;
-  -webkit-animation: fadein-out 12s; /* Safari, Chrome and Opera > 12.1 */
-  -moz-animation: fadein-out 12s; /* Firefox < 16 */
-  -ms-animation: fadein-out 12s; /* Internet Explorer */
-  -o-animation: fadein-out 12s; /* Opera < 12.1 */
-  animation: fadein-out 12s;
+  -webkit-animation: fadeinslow 30s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadeinslow 30s; /* Firefox < 16 */
+  -ms-animation: fadeinslow 30s; /* Internet Explorer */
+  -o-animation: fadeinslow 30s; /* Opera < 12.1 */
+  animation: fadeinslow 30s;
 }
 
-@keyframes fadein-out {
+.instructions2 {
+  font-size: 18px;
+  text-align: center;
+  color: white;
+  color: white;
+  font-family: "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-weight: bold;
+  text-shadow: 0px 0px 4px white;
+  -webkit-animation: fadeinslow 35s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadeinslow 40s; /* Firefox < 16 */
+  -ms-animation: fadeinslow 40s; /* Internet Explorer */
+  -o-animation: fadeinslow 40s; /* Opera < 12.1 */
+  animation: fadeinslow 40s;
+}
+
+/* these are the instructions for the app */
+@keyframes fadeinflicker {
   0% {
+    opacity: 0
+  }
+
+  5% {
+    opacity: .6
+  }
+
+  10% {
+    opacity: .3
+  }
+
+  20% {
+    opacity: .5
+  }
+
+  100% {
+    opacity: 1
+  }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadeinflicker {
+  0% {
+    opacity: 0
+  }
+
+  10% {
+    opacity: .6
+  }
+
+  15% {
+    opacity: .3
+  }
+
+  100% {
+    opacity: 1
+  }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadeinflicker {
+  0% {
+    opacity: 0
+  }
+
+  10% {
+    opacity: .6
+  }
+
+  15% {
+    opacity: .3
+  }
+
+  100% {
+    opacity: 1
+  }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadeinflicker {
+  0% {
+    opacity: 0
+  }
+
+  10% {
+    opacity: .6
+  }
+
+  15% {
+    opacity: .3
+  }
+
+  100% {
+    opacity: 1
+  }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadeinflicker {
+  0% {
+    opacity: 0
+  }
+
+  10% {
+    opacity: .6
+  }
+
+  15% {
+    opacity: .3
+  }
+
+  100% {
+    opacity: 1
+  }
+}
+
+
+
+
+
+/* These are the frames for the instructions on the bottom */
+@keyframes fadeinslow {
+  0% {
+    opacity: 0
+  }
+
+  40% {
     opacity: 0
   }
 
   100% {
     opacity: 1
   }
-
 }
 
 /* Firefox < 16 */
-@-moz-keyframes fadein-out {
+@-moz-keyframes fadeinslow {
   0% {
+    opacity: 0
+  }
+
+  40% {
     opacity: 0
   }
 
@@ -53,7 +211,85 @@
 }
 
 /* Safari, Chrome and Opera > 12.1 */
-@-webkit-keyframes fadein-out {
+@-webkit-keyframes fadeinslow {
+  0% {
+    opacity: 0
+  }
+
+  40% {
+    opacity: 0
+  }
+
+  100% {
+    opacity: 1
+  }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadeinslow {
+  0% {
+    opacity: 0
+  }
+
+  40% {
+    opacity: 0
+  }
+
+  100% {
+    opacity: 1
+  }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadeinslow {
+  0% {
+    opacity: 0
+  }
+
+  40% {
+    opacity: 0
+  }
+
+  100% {
+    opacity: 1
+  }
+}
+
+
+
+
+/* for the header */
+@keyframes fadein {
+  0% {
+    opacity: 0
+  }
+
+  25% {
+    opacity: 0
+  }
+
+  100% {
+    opacity: 1
+  }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+  0% {
+    opacity: 0
+  }
+
+  25% {
+    opacity: 0
+  }
+
+  100% {
+    opacity: 1
+  }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
   0% {
     opacity: 0
   }
@@ -64,8 +300,12 @@
 }
 
 /* Internet Explorer */
-@-ms-keyframes fadein-out {
+@-ms-keyframes fadein {
   0% {
+    opacity: 0
+  }
+
+  25% {
     opacity: 0
   }
 
@@ -75,8 +315,12 @@
 }
 
 /* Opera < 12.1 */
-@-o-keyframes fadein-out {
+@-o-keyframes fadein {
   0% {
+    opacity: 0
+  }
+
+  25% {
     opacity: 0
   }
 
