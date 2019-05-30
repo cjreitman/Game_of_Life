@@ -14,7 +14,7 @@
 }
 
 .game-header {
-  margin-top: 70px;
+  margin-top: 45px;
   text-align: center;
   color: white;
   font-family: "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
@@ -33,8 +33,8 @@
 }
 
 .instructions {
-  margin-top: 50px;
-  font-size: 18px;
+  margin-top: 60px;
+  font-size: 17px;
   text-align: center;
   color: white;
   font-family: "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
@@ -48,7 +48,7 @@
 }
 
 .instructions1 {
-  font-size: 18px;
+  font-size: 17px;
   text-align: center;
   color: white;
   color: white;
@@ -63,7 +63,7 @@
 }
 
 .instructions2 {
-  font-size: 18px;
+  font-size: 17px;
   text-align: center;
   color: white;
   color: white;

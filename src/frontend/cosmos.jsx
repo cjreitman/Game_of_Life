@@ -1,5 +1,5 @@
 import './css.css';
-// import soundfile from './sound.mp3';
+// import soundfile from './Smetana _ Moldau.mp3';
 import React from 'react';
 import Grid from './grid';
 import Controls from './controls';
@@ -24,7 +24,17 @@ class Cosmos extends React.Component {
     this.dream = this.dream.bind(this);
     this.pause = this.pause.bind(this);
     this.step = this.step.bind(this);
+    // this.audio = new Audio(soundfile);
   }
+
+  // componentDidMount() {
+  //   this.audio.play().then((play) => {
+  //     console.log(play);
+  //   }).catch((err) => {
+  //     console.log(err);
+  //   });
+
+  // }
 
   selectCell(row, col) {
     let gridCopy = arrayClone(this.state.grid);
