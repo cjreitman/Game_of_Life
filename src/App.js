@@ -4,16 +4,16 @@ import './App.css';
 
 function App() {
   return (
-    <div>
-      <h1 className="game-header">Conway's Game of Life</h1>
-      <p className="author">by Colin Reitman</p>
-        <div className="app">
-          <Cosmos/>
-        </div>
+    <div className="whole-app">
+      <a className="game-header" href="https://github.com/GhostOfColin/Game_of_Life">Conway's Game of Life</a>
+      <a className="author" href="https://www.linkedin.com/in/colin-reitman">by Colin Reitman</a>
+      <div className="app">
+        <Cosmos/>
+      </div>
       <p className="instructions" > The Game of Life is a cellular automaton </p>
       <p className="instructions1" > Cells live and die based on how many neighbors they have </p>
       <p className="instructions2" > Click individual cells or Populate Cosmos to design a game </p>
-      <p className="instructions3" > Dare to Dream to see the Game in action </p>
+      <p className="instructions3" > Dare to Dream to see The Game in action </p>
     </div>
   );
 }
