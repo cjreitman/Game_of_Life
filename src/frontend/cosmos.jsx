@@ -1,5 +1,5 @@
 import './css.css';
-// import soundfile from './Smetana _ Moldau.mp3';
+import soundfile from './Smetana _ Moldau.mp3';
 import React from 'react';
 import Grid from './grid';
 import Controls from './controls';
@@ -15,26 +15,42 @@ class Cosmos extends React.Component {
       generation: 0,
       grid: Array(this.rows).fill().map(() => Array(this.cols).fill(false)),
       dreaming: false,
+      musicPlaying: true
     };
     this.initialState = this.state.grid;
     this.selectCell = this.selectCell.bind(this);
     this.populateCosmos = this.populateCosmos.bind(this);
     this.clearCosmos = this.clearCosmos.bind(this);
     this.play = this.play.bind(this);
+    this.autoPlayMusic = this.autoPlayMusic.bind(this);
     this.dream = this.dream.bind(this);
     this.pause = this.pause.bind(this);
     this.step = this.step.bind(this);
-    // this.audio = new Audio(soundfile);
+    this.switchMusic = this.switchMusic.bind(this);
+    this.audio = new Audio(soundfile);
+    
   }
 
-  // componentDidMount() {
-  //   this.audio.play().then((play) => {
-  //     console.log(play);
-  //   }).catch((err) => {
-  //     console.log(err);
-  //   });
+  autoPlayMusic() {
+    if (this.state.musicPlaying) {
+      this.audio.play();
+    }
+  }
 
-  // }
+  switchMusic() {
+    if (this.state.musicPlaying) {
+      this.audio.pause();
+      this.setState({
+        musicPlaying: false
+      });
+      console.log(this.musicPlaying);
+    } else {
+      this.setState({
+        musicPlaying: true
+      });
+      this.audio.play();
+    }
+  }
 
   selectCell(row, col) {
     let gridCopy = arrayClone(this.state.grid);
@@ -42,6 +58,7 @@ class Cosmos extends React.Component {
     this.setState({
       grid: gridCopy
     });
+    this.autoPlayMusic();
   }
 
   populateCosmos() {
@@ -112,19 +129,22 @@ class Cosmos extends React.Component {
   step() {
     let g = this.state.grid;
     let g2 = arrayClone(this.state.grid);
-    let count = 0;
-    let i = 0;
-    let j = 0;
-    if (i > 0) if (g[i - 1][j]) count++;
-    if (i > 0 && j > 0) if (g[i - 1][j - 1]) count++;
-    if (i > 0 && j < this.cols - 1) if (g[i - 1][j + 1]) count++;
-    if (j < this.cols - 1) if (g[i][j + 1]) count++;
-    if (j > 0) if (g[i][j - 1]) count++;
-    if (i < this.rows - 1) if (g[i + 1][j]) count++;
-    if (i < this.rows - 1 && j > 0) if (g[i + 1][j - 1]) count++;
-    if (i < this.rows - 1 && j < this.cols - 1) if (g[i + 1][j + 1]) count++;
-    if (g[i][j] && (count < 2 || count > 3)) g2[i][j] = false;
-    if (!g[i][j] && count === 3) g2[i][j] = true;
+
+    for (let i = 0; i < 30; i++) {
+		  for (let j = 0; j < 50; j++) {
+		    let count = 0;
+		    if (i > 0) if (g[i - 1][j]) count++;
+		    if (i > 0 && j > 0) if (g[i - 1][j - 1]) count++;
+		    if (i > 0 && j < this.cols - 1) if (g[i - 1][j + 1]) count++;
+		    if (j < this.cols - 1) if (g[i][j + 1]) count++;
+		    if (j > 0) if (g[i][j - 1]) count++;
+		    if (i < this.rows - 1) if (g[i + 1][j]) count++;
+		    if (i < this.rows - 1 && j > 0) if (g[i + 1][j - 1]) count++;
+		    if (i < this.rows - 1 && j < this.cols - 1) if (g[i + 1][j + 1]) count++;
+		    if (g[i][j] && (count < 2 || count > 3)) g2[i][j] = false;
+		    if (!g[i][j] && count === 3) g2[i][j] = true;
+      }
+    }
     this.setState({
       grid: g2,
       generation: this.state.generation + 1
@@ -150,8 +170,10 @@ class Cosmos extends React.Component {
           clearCosmos={this.clearCosmos}
           step={this.step}
           play={this.play}
+          switchMusic={this.switchMusic}
           pause={this.pause}
           dreaming={this.state.dreaming}
+          autoPlayMusic={this.autoPlayMusic}
         />
       </div>
     </div>)

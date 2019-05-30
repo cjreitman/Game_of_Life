@@ -33,7 +33,7 @@
 }
 
 .instructions {
-  margin-top: 60px;
+  margin-top: 50px;
   font-size: 17px;
   text-align: center;
   color: white;
@@ -84,15 +84,15 @@
   }
 
   5% {
-    opacity: .6
+    opacity: .7
   }
 
   10% {
-    opacity: .3
+    opacity: .2
   }
 
   20% {
-    opacity: .5
+    opacity: .4
   }
 
   100% {
@@ -106,12 +106,16 @@
     opacity: 0
   }
 
-  10% {
-    opacity: .6
+  5% {
+    opacity: .7
   }
 
-  15% {
-    opacity: .3
+  10% {
+    opacity: .2
+  }
+
+  20% {
+    opacity: .4
   }
 
   100% {
@@ -125,12 +129,16 @@
     opacity: 0
   }
 
-  10% {
-    opacity: .6
+  5% {
+    opacity: .7
   }
 
-  15% {
-    opacity: .3
+  10% {
+    opacity: .2
+  }
+
+  20% {
+    opacity: .4
   }
 
   100% {
@@ -144,12 +152,16 @@
     opacity: 0
   }
 
-  10% {
-    opacity: .6
+  5% {
+    opacity: .7
   }
 
-  15% {
-    opacity: .3
+  10% {
+    opacity: .2
+  }
+
+  20% {
+    opacity: .4
   }
 
   100% {
@@ -163,12 +175,16 @@
     opacity: 0
   }
 
-  10% {
-    opacity: .6
+  5% {
+    opacity: .7
   }
 
-  15% {
-    opacity: .3
+  10% {
+    opacity: .2
+  }
+
+  20% {
+    opacity: .4
   }
 
   100% {
