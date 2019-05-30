@@ -31,6 +31,22 @@
   
 }
 
+.author {
+  margin-left: 190px;
+  margin-top: -20px;
+  text-align: center;
+  color: white;
+  font-family: "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  text-shadow: 0px 0px 10px white;
+  -webkit-animation: fadein 15s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 15s; /* Firefox < 16 */
+  -ms-animation: fadein 15s; /* Internet Explorer */
+  -o-animation: fadein 15s; /* Opera < 12.1 */
+  animation: fadein 15s;
+}
+
 .instructions {
   margin-top: 50px;
   font-size: 17px;
@@ -54,11 +70,11 @@
   font-family: "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   font-weight: bold;
   text-shadow: 0px 0px 4px white;
-  -webkit-animation: fadeinslow 30s; /* Safari, Chrome and Opera > 12.1 */
-  -moz-animation: fadeinslow 30s; /* Firefox < 16 */
-  -ms-animation: fadeinslow 30s; /* Internet Explorer */
-  -o-animation: fadeinslow 30s; /* Opera < 12.1 */
-  animation: fadeinslow 30s;
+  -webkit-animation: fadeinslow 25s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadeinslow 25s; /* Firefox < 16 */
+  -ms-animation: fadeinslow 25s; /* Internet Explorer */
+  -o-animation: fadeinslow 25s; /* Opera < 12.1 */
+  animation: fadeinslow 25s;
 }
 
 .instructions2 {
@@ -69,11 +85,26 @@
   font-family: "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   font-weight: bold;
   text-shadow: 0px 0px 4px white;
+  -webkit-animation: fadeinslow 30s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadeinslow 30s; /* Firefox < 16 */
+  -ms-animation: fadeinslow 30s; /* Internet Explorer */
+  -o-animation: fadeinslow 30s; /* Opera < 12.1 */
+  animation: fadeinslow 30s;
+}
+
+.instructions3 {
+  font-size: 17px;
+  text-align: center;
+  color: white;
+  color: white;
+  font-family: "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-weight: bold;
+  text-shadow: 0px 0px 4px white;
   -webkit-animation: fadeinslow 35s; /* Safari, Chrome and Opera > 12.1 */
-  -moz-animation: fadeinslow 40s; /* Firefox < 16 */
-  -ms-animation: fadeinslow 40s; /* Internet Explorer */
-  -o-animation: fadeinslow 40s; /* Opera < 12.1 */
-  animation: fadeinslow 40s;
+  -moz-animation: fadeinslow 35s; /* Firefox < 16 */
+  -ms-animation: fadeinslow 35s; /* Internet Explorer */
+  -o-animation: fadeinslow 35s; /* Opera < 12.1 */
+  animation: fadeinslow 35s;
 }
 
 /* these are the instructions for the app */
