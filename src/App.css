@@ -68,62 +68,80 @@
 
 .instructions1 {
   font-size: 16px;
+  text-align: right;
+  color: white;
   text-align: center;
-  color: white;
-  color: white;
   font-family: "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   font-weight: bold;
   text-shadow: 0px 0px 4px white;
-  -webkit-animation: fadeinslow 25s; /* Safari, Chrome and Opera > 12.1 */
-  -moz-animation: fadeinslow 25s; /* Firefox < 16 */
-  -ms-animation: fadeinslow 25s; /* Internet Explorer */
-  -o-animation: fadeinslow 25s; /* Opera < 12.1 */
-  animation: fadeinslow 25s;
+  opacity: 0;
+  -webkit-animation: fadeinslow 20s; /* Safari, Chrome and Opera > 12.1 */
+  -webkit-animation-delay: 1s;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation: fadeinslow 20s; /* Firefox < 16 */
+  -moz-animation-delay: 1s;
+  -moz-animation-fill-mode: forwards;
+  -ms-animation: fadeinslow 20s; /* Internet Explorer */
+  -ms-animation-delay: 1s;
+  -ms-animation-fill-mode: forwards;
+  -o-animation: fadeinslow 20s; /* Opera < 12.1 */
+  -o-animation-delay: 1s;
+  -o-animation-fill-mode: forwards;
+  animation: fadeinslow 20s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
 }
 
 .instructions2 {
   font-size: 16px;
+  text-align: right;
+  color: white;
   text-align: center;
-  color: white;
-  color: white;
   font-family: "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   font-weight: bold;
   text-shadow: 0px 0px 4px white;
-  -webkit-animation: fadeinslow 30s; /* Safari, Chrome and Opera > 12.1 */
-  -moz-animation: fadeinslow 30s; /* Firefox < 16 */
-  -ms-animation: fadeinslow 30s; /* Internet Explorer */
-  -o-animation: fadeinslow 30s; /* Opera < 12.1 */
-  animation: fadeinslow 30s;
+  opacity: 0;
+  -webkit-animation: fadeinslow 20s; /* Safari, Chrome and Opera > 12.1 */
+  -webkit-animation-delay: 3s;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation: fadeinslow 20s; /* Firefox < 16 */
+  -moz-animation-delay: 3s;
+  -moz-animation-fill-mode: forwards;
+  -ms-animation: fadeinslow 20s; /* Internet Explorer */
+  -ms-animation-delay: 3s;
+  -ms-animation-fill-mode: forwards;
+  -o-animation: fadeinslow 20s; /* Opera < 12.1 */
+  -o-animation-delay: 3s;
+  -o-animation-fill-mode: forwards;
+  animation: fadeinslow 20s;
+  animation-delay: 3s;
+  animation-fill-mode: forwards;
 }
 
 .instructions3 {
   font-size: 16px;
+  text-align: right;
+  color: white;
   text-align: center;
-  color: white;
-  color: white;
   font-family: "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   font-weight: bold;
   text-shadow: 0px 0px 4px white;
-  -webkit-animation: fadeinslow 35s; /* Safari, Chrome and Opera > 12.1 */
-  -moz-animation: fadeinslow 35s; /* Firefox < 16 */
-  -ms-animation: fadeinslow 35s; /* Internet Explorer */
-  -o-animation: fadeinslow 35s; /* Opera < 12.1 */
-  animation: fadeinslow 35s;
-}
-
-.link {
-  font-size: 15px;
-  text-align: center;
-  color: white;
-  color: white;
-  font-family: "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
-  font-weight: bold;
-  text-shadow: 0px 0px 4px white;
-  -webkit-animation: fadeinslow 35s; /* Safari, Chrome and Opera > 12.1 */
-  -moz-animation: fadeinslow 35s; /* Firefox < 16 */
-  -ms-animation: fadeinslow 35s; /* Internet Explorer */
-  -o-animation: fadeinslow 35s; /* Opera < 12.1 */
-  animation: fadeinslow 35s;
+  opacity: 0;
+  -webkit-animation: fadeinslow 20s; /* Safari, Chrome and Opera > 12.1 */
+  -webkit-animation-delay: 5s;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation: fadeinslow 20s; /* Firefox < 16 */
+  -moz-animation-delay: 5s;
+  -moz-animation-fill-mode: forwards;
+  -ms-animation: fadeinslow 20s; /* Internet Explorer */
+  -ms-animation-delay: 5s;
+  -ms-animation-fill-mode: forwards;
+  -o-animation: fadeinslow 20s; /* Opera < 12.1 */
+  -o-animation-delay: 5s;
+  -o-animation-fill-mode: forwards;
+  animation: fadeinslow 20s;
+  animation-delay: 5s;
+  animation-fill-mode: forwards;
 }
 
 .whole-app {
@@ -131,8 +149,6 @@
   flex-direction: column;
   min-width: 950px;
 }
-
-
 
 /* these are the instructions for the app */
 @keyframes fadeinflicker {
