@@ -52,7 +52,7 @@
 }
 
 .instructions {
-  margin-top: 40px;
+  margin-top: 35px;
   font-size: 16px;
   text-align: center;
   color: white;
@@ -143,7 +143,7 @@
   }
 
   10% {
-    opacity: .2
+    opacity: .1
   }
 
   11% {
