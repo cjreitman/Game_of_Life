@@ -5,8 +5,8 @@ import './App.css';
 function App() {
   return (
     <div className="whole-app">
-      <a className="game-header" href="https://github.com/GhostOfColin/Game_of_Life">Conway's Game of Life</a>
-      <a className="author" href="https://www.linkedin.com/in/colin-reitman">by Colin Reitman</a>
+      <a className="game-header" target="_blank" href="https://github.com/GhostOfColin/Game_of_Life">Conway's Game of Life</a>
+      <a className="author" target="_blank" href="https://www.linkedin.com/in/colin-reitman">by Colin Reitman</a>
       <div className="app">
         <Cosmos/>
       </div>

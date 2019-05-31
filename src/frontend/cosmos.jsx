@@ -130,8 +130,8 @@ class Cosmos extends React.Component {
     let g = this.state.grid;
     let g2 = arrayClone(this.state.grid);
 
-    for (let i = 0; i < 30; i++) {
-		  for (let j = 0; j < 50; j++) {
+    for (let i = 0; i < 45; i++) {
+		  for (let j = 0; j < 85; j++) {
 		    let count = 0;
 		    if (i > 0) if (g[i - 1][j]) count++;
 		    if (i > 0 && j > 0) if (g[i - 1][j - 1]) count++;
