@@ -52,7 +52,7 @@
 }
 
 .instructions {
-  margin-top: 45px;
+  margin-top: 50px;
   font-size: 16px;
   text-align: center;
   color: white;
@@ -153,15 +153,23 @@
 /* these are the instructions for the app */
 @keyframes fadeinflicker {
   0% {
-    opacity: 0
+    opacity: .2
   }
 
   5% {
     opacity: .8
   }
 
-  10% {
+  6% {
     opacity: .1
+  }
+
+  9% {
+    opacity: .7
+  }
+
+  10% {
+    opacity: .2
   }
 
   11% {
@@ -169,14 +177,6 @@
   }
 
   12% {
-    opacity: .2
-  }
-
-  13% {
-    opacity: .7
-  }
-
-  14% {
     opacity: .2
   }
 
@@ -188,11 +188,19 @@
 /* Firefox < 16 */
 @-moz-keyframes fadeinflicker {
   0% {
-    opacity: 0
+    opacity: .2
   }
 
   5% {
     opacity: .8
+  }
+
+  6% {
+    opacity: .1
+  }
+
+  9% {
+    opacity: .7
   }
 
   10% {
@@ -204,14 +212,6 @@
   }
 
   12% {
-    opacity: .2
-  }
-
-  13% {
-    opacity: .7
-  }
-
-  14% {
     opacity: .2
   }
 
@@ -223,11 +223,19 @@
 /* Safari, Chrome and Opera > 12.1 */
 @-webkit-keyframes fadeinflicker {
   0% {
-    opacity: 0
+    opacity: .2
   }
 
   5% {
     opacity: .8
+  }
+
+  6% {
+    opacity: .1
+  }
+
+  9% {
+    opacity: .7
   }
 
   10% {
@@ -239,14 +247,6 @@
   }
 
   12% {
-    opacity: .2
-  }
-
-  13% {
-    opacity: .7
-  }
-
-  14% {
     opacity: .2
   }
 
@@ -258,11 +258,19 @@
 /* Internet Explorer */
 @-ms-keyframes fadeinflicker {
   0% {
-    opacity: 0
+    opacity: .2
   }
 
   5% {
     opacity: .8
+  }
+
+  6% {
+    opacity: .1
+  }
+
+  9% {
+    opacity: .7
   }
 
   10% {
@@ -274,14 +282,6 @@
   }
 
   12% {
-    opacity: .2
-  }
-
-  13% {
-    opacity: .7
-  }
-
-  14% {
     opacity: .2
   }
 
@@ -293,11 +293,19 @@
 /* Opera < 12.1 */
 @-o-keyframes fadeinflicker {
   0% {
-    opacity: 0
+    opacity: .2
   }
 
   5% {
     opacity: .8
+  }
+
+  6% {
+    opacity: .1
+  }
+
+  9% {
+    opacity: .7
   }
 
   10% {
@@ -309,14 +317,6 @@
   }
 
   12% {
-    opacity: .2
-  }
-
-  13% {
-    opacity: .7
-  }
-
-  14% {
     opacity: .2
   }
 
