@@ -8,7 +8,7 @@ class Cosmos extends React.Component {
 
   constructor(props) {
     super(props);
-    this.speed = 100;
+    this.speed = 112;
     this.rows = 45;
     this.cols = 85;
     this.state = {
