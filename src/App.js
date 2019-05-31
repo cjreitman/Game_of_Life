@@ -10,10 +10,12 @@ function App() {
       <div className="app">
         <Cosmos/>
       </div>
-      <p className="instructions" > The Game of Life is a cellular automaton </p>
-      <p className="instructions1" > Cells live and die based on how many neighbors they have </p>
-      <p className="instructions2" > Click individual cells or Populate Cosmos to design a game </p>
-      <p className="instructions3" > Dare to Dream to see The Game in action </p>
+      <div className="instructions-div">
+        <p className="instructions" > The Game of Life is a cellular automaton </p>
+        <p className="instructions1" > Cells live and die based on how many neighbors they have </p>
+        <p className="instructions2" > Click individual cells or Populate Cosmos to design a game </p>
+        <p className="instructions3" > Dare to Dream to see The Game in action </p>
+      </div>
     </div>
   );
 }

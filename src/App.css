@@ -10,11 +10,11 @@
   -ms-animation: fadeinflicker 6s; /* Internet Explorer */
   -o-animation: fadeinflicker 6s; /* Opera < 12.1 */
   animation: fadeinflicker 6s;
- 
 }
 
 .game-header {
   margin-top: 45px;
+  min-width: 380px;
   text-align: center;
   color: white;
   font-family: "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
@@ -47,8 +47,12 @@
   animation: fadein 15s;
 }
 
+.instructions-div {
+  min-width: 550px;
+}
+
 .instructions {
-  margin-top: 50px;
+  margin-top: 40px;
   font-size: 17px;
   text-align: center;
   color: white;
@@ -122,17 +126,10 @@
   animation: fadeinslow 35s;
 }
 
-.links {
-margin: auto;
-  display: flex;
-  justify-content: space-between;
-  width: 20%;
-  margin-top: 50px;
-}
-
 .whole-app {
   display: flex;
   flex-direction: column;
+  min-width: 950px;
 }
 
 /* these are the instructions for the app */
