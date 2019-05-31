@@ -10,7 +10,6 @@ class Controls extends React.Component {
 
   populateCosmos() {
     this.props.populateCosmos();
-    this.props.autoPlayMusic();
   }
 
   clearCosmos() {
@@ -19,6 +18,7 @@ class Controls extends React.Component {
 
   play() {
     this.props.play();
+    this.props.autoPlayMusic();
   }
 
   pause() {
