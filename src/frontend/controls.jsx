@@ -19,6 +19,8 @@ class Controls extends React.Component {
   play() {
     this.props.play();
     this.props.autoPlayMusic();
+    let info = document.getElementById("more-info");
+    info.classList.add("more-info1");
   }
 
   pause() {
@@ -45,10 +47,10 @@ class Controls extends React.Component {
     return (
       <div className="buttons">
         <div className="left-buttons">
-          <button className="button" onClick={() => this.switchMusic()}>Music</button>
           <button className="button" onClick={() => this.populateCosmos()}>Populate Cosmos</button>
           <button className="button" onClick={() => this.clearCosmos()}>Clear Cosmos</button>
           <button className="button" onClick={() => this.step()}>Next Generation</button>
+          <button className="button" onClick={() => this.switchMusic()}>Music</button>
         </div>
         <div className="right-buttons">
           {this.buttonSwitch()}

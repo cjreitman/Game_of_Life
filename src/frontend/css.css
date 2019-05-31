@@ -54,7 +54,7 @@
 .left-buttons {
   display: flex;
   justify-content: space-between;
-  width: 55%;
+  width: 48%;
   margin-left: 20px;
   font-size: 13px;
 }
@@ -95,5 +95,219 @@
   border-radius: 5px;
   box-shadow: 0px 0px 10px white;
   text-shadow: 0px 0px 3px white;
+}
+
+.header-div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.more-info {
+  margin-right: 20px;
+  margin-top: 15px;
+  font-size: 16px;
+  text-align: right;
+  font-family: "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-weight: bold;
+}
+
+.more-info1 {
+  margin-right: 20px;
+  font-size: 16px;
+  text-align: right;
+  color: white;
+  font-family: "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-weight: bold;
+  text-shadow: 0px 0px 4px white;
+  opacity: 0;
+  -webkit-animation: fadeinflicker 6s; /* Safari, Chrome and Opera > 12.1 */
+  -webkit-animation-delay: 10s;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation: fadeinflicker 6s; /* Firefox < 16 */
+  -moz-animation-delay: 10s;
+  -moz-animation-fill-mode: forwards;
+  -ms-animation: fadeinflicker 6s; /* Internet Explorer */
+  -ms-animation-delay: 10s;
+  -ms-animation-fill-mode: forwards;
+  -o-animation: fadeinflicker 6s; /* Opera < 12.1 */
+  -o-animation-delay: 10s;
+  -o-animation-fill-mode: forwards;
+  animation: fadeinflicker 6s;
+  animation-delay: 10s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeinflicker {
+  0% {
+    opacity: 0
+  }
+
+  5% {
+    opacity: .8
+  }
+
+  10% {
+    opacity: .1
+  }
+
+  11% {
+    opacity: .7
+  }
+
+  12% {
+    opacity: .2
+  }
+
+  13% {
+    opacity: .7
+  }
+
+  14% {
+    opacity: .2
+  }
+
+  100% {
+    opacity: 1
+  }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadeinflicker {
+  0% {
+    opacity: 0
+  }
+
+  5% {
+    opacity: .8
+  }
+
+  10% {
+    opacity: .2
+  }
+
+  11% {
+    opacity: .7
+  }
+
+  12% {
+    opacity: .2
+  }
+
+  13% {
+    opacity: .7
+  }
+
+  14% {
+    opacity: .2
+  }
+
+  100% {
+    opacity: 1
+  }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadeinflicker {
+  0% {
+    opacity: 0
+  }
+
+  5% {
+    opacity: .8
+  }
+
+  10% {
+    opacity: .2
+  }
+
+  11% {
+    opacity: .7
+  }
+
+  12% {
+    opacity: .2
+  }
+
+  13% {
+    opacity: .7
+  }
+
+  14% {
+    opacity: .2
+  }
+
+  100% {
+    opacity: 1
+  }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadeinflicker {
+  0% {
+    opacity: 0
+  }
+
+  5% {
+    opacity: .8
+  }
+
+  10% {
+    opacity: .2
+  }
+
+  11% {
+    opacity: .7
+  }
+
+  12% {
+    opacity: .2
+  }
+
+  13% {
+    opacity: .7
+  }
+
+  14% {
+    opacity: .2
+  }
+
+  100% {
+    opacity: 1
+  }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadeinflicker {
+  0% {
+    opacity: 0
+  }
+
+  5% {
+    opacity: .8
+  }
+
+  10% {
+    opacity: .2
+  }
+
+  11% {
+    opacity: .7
+  }
+
+  12% {
+    opacity: .2
+  }
+
+  13% {
+    opacity: .7
+  }
+
+  14% {
+    opacity: .2
+  }
+
+  100% {
+    opacity: 1
+  }
 }
 

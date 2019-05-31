@@ -10,7 +10,7 @@ class Cosmos extends React.Component {
     super(props);
     this.speed = 100;
     this.rows = 45;
-    this.cols = 75;
+    this.cols = 85;
     this.state = {
       generation: 0,
       grid: Array(this.rows).fill().map(() => Array(this.cols).fill(false)),
@@ -58,7 +58,7 @@ class Cosmos extends React.Component {
     this.setState({
       grid: gridCopy
     });
-    this.autoPlayMusic();
+    
   }
 
   populateCosmos() {
@@ -155,7 +155,15 @@ class Cosmos extends React.Component {
     return (
     <div className="cosmos"> 
       <div>
-      <h3 className="generations-header"> Generations: {this.state.generation} </h3>
+        <div className="header-div">
+          <h3 className="generations-header"> Generations: {this.state.generation} </h3>
+          <a target="_blank" href="https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life" id="more-info" className="more-info"> The Game of Life was the basis for several computational discoveries 
+          <br/>
+          There are structures that are as of yet undiscovered
+          <br/>
+          Click to visit the Wikipedia page and learn more about it
+          </a>
+        </div>
         <Grid
           rows = {this.rows}
           cols = {this.cols}
