@@ -32,7 +32,7 @@ class Grid extends React.Component {
   render() {
 
     let popGrid = this.populator();
-    const width = this.props.cols * 16;
+    const width = this.props.cols * 11;
 
     return (
     <div className="grid" style={{width: width}}>

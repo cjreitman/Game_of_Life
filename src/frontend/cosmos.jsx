@@ -8,9 +8,9 @@ class Cosmos extends React.Component {
 
   constructor(props) {
     super(props);
-    this.speed = 150;
-    this.rows = 30;
-    this.cols = 50;
+    this.speed = 100;
+    this.rows = 45;
+    this.cols = 75;
     this.state = {
       generation: 0,
       grid: Array(this.rows).fill().map(() => Array(this.cols).fill(false)),
