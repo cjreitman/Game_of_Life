@@ -159,7 +159,7 @@ class Cosmos extends React.Component {
           <h3 className="generations-header"> Generations: {this.state.generation} </h3>
           <a target="_blank" href="https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life" id="more-info" className="more-info"> The Game of Life was the basis for several computational discoveries 
           <br/>
-          There are structures that are as of yet undiscovered
+          There are structures that are - as of yet - undiscovered
           <br/>
           Click to visit the Wikipedia page and learn more about it
           </a>
