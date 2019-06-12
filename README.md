@@ -8,7 +8,7 @@ Conway's game of life is a cellular automaton developed in the 1970s by John Con
 
 # Images
 
-![image](https://user-images.githubusercontent.com/46357004/59389931-c0e0f300-8d3d-11e9-96bf-38023008199f.png)
+![image](https://user-images.githubusercontent.com/46357004/59389991-f8e83600-8d3d-11e9-9d32-542ff3f225ec.png)
 
 ![image](https://user-images.githubusercontent.com/46357004/59389945-cb9b8800-8d3d-11e9-9e8f-b296c4e03ec5.png)
 
