@@ -54,7 +54,7 @@
 .left-buttons {
   display: flex;
   justify-content: space-between;
-  width: 48%;
+  width: 50%;
   margin-left: 20px;
   font-size: 13px;
 }

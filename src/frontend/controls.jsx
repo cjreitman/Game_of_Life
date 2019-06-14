@@ -25,6 +25,7 @@ class Controls extends React.Component {
 
   pause() {
     this.props.pause();
+    this.props.pauseMusic();
   }
 
   step() {

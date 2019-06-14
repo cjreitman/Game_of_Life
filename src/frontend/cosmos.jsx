@@ -27,6 +27,7 @@ class Cosmos extends React.Component {
     this.pause = this.pause.bind(this);
     this.step = this.step.bind(this);
     this.switchMusic = this.switchMusic.bind(this);
+    this.pauseMusic = this.pauseMusic.bind(this);
     this.audio = new Audio(soundfile);
     
   }
@@ -37,13 +38,16 @@ class Cosmos extends React.Component {
     }
   }
 
+  pauseMusic() {
+    this.audio.pause();
+  }
+
   switchMusic() {
     if (this.state.musicPlaying) {
       this.audio.pause();
       this.setState({
         musicPlaying: false
       });
-      console.log(this.musicPlaying);
     } else {
       this.setState({
         musicPlaying: true
@@ -157,9 +161,9 @@ class Cosmos extends React.Component {
       <div>
         <div className="header-div">
           <h3 className="generations-header"> Generations: {this.state.generation} </h3>
-          <a target="_blank" href="https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life" id="more-info" className="more-info"> The Game of Life was the basis for several computational discoveries 
+          <a target="_blank" rel="noopener noreferrer" href="https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life" id="more-info" className="more-info"> The Game of Life was the basis for several computational discoveries 
           <br/>
-          There are structures that are - as of yet - undiscovered
+          There exist structures that are - as of yet - undiscovered
           <br/>
           Click to visit the Wikipedia page and learn more about it
           </a>
@@ -182,6 +186,7 @@ class Cosmos extends React.Component {
           pause={this.pause}
           dreaming={this.state.dreaming}
           autoPlayMusic={this.autoPlayMusic}
+          pauseMusic={this.pauseMusic}
         />
       </div>
     </div>)
